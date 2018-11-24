@@ -84,7 +84,7 @@ class Main:
                             self.states.ph_dosing_flag = True
                             self.logger.debug(schedule.jobs)
                             self.logger.debug('Ph Dosing scheduler started')
-
+                        print(schedule.jobs)
                         schedule.run_pending()
                         time.sleep(1)
 
@@ -127,7 +127,7 @@ class Main:
         self.logger.debug('data acquisition and image capture created')
 
         # schedule sending data to aws
-        schedule.every(self.grow_cycle.sendDataToAWSInterval).hours.\
+        schedule.every(self.grow_cycle.sendDataToAWSInterval).minutes.\
             do(self.send_data_to_aws)
         self.logger.debug('Data sending to AWS scheduled')
 
@@ -221,9 +221,16 @@ class Main:
         return
 
     def send_data_to_aws(self):
-        while not self.Data_Queue.empty():
-            self.write_to_file(self.Data_Queue.get())
+        self.logger.debug('Sending {} data packets to AWS'.format(self.Data_Queue.qsize()))
+        empty = False
+        while not empty:
+            #print(type(self.Data_Queue.get()))
+            #print(self.Data_Queue.empty())
+            # print(type(self.Data_Queue.get()))
+            self.write_to_file(str(self.Data_Queue.get())+"\n")
             # self.AWS.sendData(self.Data_Queue.get())
+            empty = self.Data_Queue.empty()
+            print(empty)
         return
 
     def get_current_week(self):

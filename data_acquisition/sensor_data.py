@@ -17,7 +17,7 @@ class SensorData:
 
         # open serial port
         self.interrupt_pin = 19
-        self.serialOpen = Serial('/dev/ttyACM0', 115200)
+        self.serialOpen = Serial('/dev/ttyACM1', 115200)
 
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.interrupt_pin, GPIO.OUT, initial=1)

@@ -1,0 +1,83 @@
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 49, 9, 838764), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 49, 33, 924804), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 49, 58, 15441), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 50, 22, 105257), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 50, 46, 211899), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 51, 10, 302206), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 51, 34, 391651), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 51, 58, 481588), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 52, 22, 572287), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '0.00', 'status': 'OK', 'pH': '0.00', 'waterlevel': '0.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 52, 46, 664696), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 53, 10, 752456), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 53, 34, 841673), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 53, 58, 930584), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 54, 23, 23374), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 54, 47, 114537), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 55, 11, 205439), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 55, 35, 296053), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 55, 59, 387668), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 56, 23, 493022), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 56, 47, 581686), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 57, 11, 671559), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 57, 35, 761182), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 57, 59, 860635), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 58, 23, 957809), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 58, 48, 69368), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 59, 12, 163269), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 2, 59, 36, 259231), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 0, 0, 385855), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 0, 24, 473023), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 0, 48, 565036), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 1, 12, 657004), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 1, 36, 744957), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 2, 0, 835185), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 2, 24, 923852), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 2, 49, 13184), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 3, 13, 100059), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 3, 37, 192267), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 4, 1, 280273), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 4, 25, 374425), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 4, 49, 475712), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 5, 13, 580499), 'humidity': '11', 'signature': 'AE6C88FE'}
+
+{'temperature': '21', 'EC': '-1.00', 'status': 'OK', 'pH': '7.16', 'waterlevel': '6.00', 'timestamp': datetime.datetime(2018, 11, 24, 3, 5, 37, 668177), 'humidity': '11', 'signature': 'AE6C88FE'}

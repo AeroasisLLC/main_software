@@ -143,7 +143,7 @@ class GrowCycle:
         self.states.FAN_status = True
         fanOffTime = format(datetime.datetime.now() +
                             datetime.timedelta(minutes=self.fanOnDuration),
-                            '%H:%M:%S')
+                            '%H:%M')
         schedule.every().day.at(fanOffTime).do(self.fan_off)
 
     def fan_off(self):
@@ -158,7 +158,7 @@ class GrowCycle:
         self.states.Pump_Mix_status = True
         pumpOffTime = format(datetime.datetime.now() +
                              datetime.timedelta(minutes=self.pumpMixingOnDuration),
-                             '%H:%M:%S')
+                             '%H:%M')
         schedule.every().day.at(pumpOffTime).do(self.pump_mixing_off)
 
     def pump_mixing_off(self):
@@ -173,7 +173,7 @@ class GrowCycle:
         self.states.Pump_Mix_status = True
         pumpOffTime = format(datetime.datetime.now() +
                              datetime.timedelta(minutes=self.pumpPouringOnDuration),
-                             '%H:%M:%S')
+                             '%H:%M')
         schedule.every().day.at(pumpOffTime).do(self.pump_pouring_off)
 
     def pump_pouring_off(self):
@@ -187,7 +187,7 @@ class GrowCycle:
         self.logger.debug('Ph up motor switched ON')
         phUpMotorOffTime = format(datetime.datetime.now() +
                                   datetime.timedelta(minutes=self.phDosingDuration),
-                                  '%H:%M:%S')
+                                  '%H:%M')
         schedule.every().day.at(phUpMotorOffTime).do(self.ph_up_motor_off)
 
     def ph_up_motor_off(self):
@@ -200,7 +200,7 @@ class GrowCycle:
         self.logger.debug('Ph down motor switched ON')
         phDownMotorOffTime = format(datetime.datetime.now() +
                                     datetime.timedelta(minutes=self.phDosingDuration),
-                                    '%H:%M:%S')
+                                    '%H:%M')
         schedule.every().day.at(phDownMotorOffTime).do(self.ph_down_motor_off)
 
     def ph_down_motor_off(self):

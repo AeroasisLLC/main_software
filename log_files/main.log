@@ -1,51 +1,147 @@
-2018-11-23 21:36:48,820:DEBUG:__main__:user activated task grow-start
-2018-11-23 21:36:48,827:DEBUG:__main__:Grow Started by the user
-2018-11-23 21:36:48,846:DEBUG:__main__:Config File Found
-2018-11-23 21:36:48,855:DEBUG:__main__:Config File Read
-2018-11-23 21:36:48,856:DEBUG:__main__:Grow Initiated
-2018-11-23 21:36:48,865:INFO:__main__:Fetching the schedule data for week0
-2018-11-23 21:36:48,867:DEBUG:__main__:Read config file
-2018-11-23 21:36:48,867:DEBUG:__main__:Global states declared
-2018-11-23 21:36:48,868:DEBUG:__main__:Config file scheduler created
-2018-11-23 21:36:48,868:DEBUG:__main__:LED task created
-2018-11-23 21:36:48,869:DEBUG:__main__:Fan scheduler created
-2018-11-23 21:36:48,869:DEBUG:__main__:Mixing pump task created
-2018-11-23 21:36:48,870:DEBUG:__main__:data acquisition and image capture created
-2018-11-23 21:36:48,870:DEBUG:__main__:Data sending to AWS scheduled
-2018-11-23 21:36:48,870:DEBUG:__main__:Image sending to S3 scheduled
-2018-11-23 21:36:48,871:DEBUG:__main__:[Every 0.5 days do light_on() (last run: [never], next run: 2018-11-24 09:36:48), Every 0.3 hours do fan_on() (last run: [never], next run: 2018-11-23 21:54:48), Every 6 hours do pump_mixing_on() (last run: [never], next run: 2018-11-24 03:36:48), Every 60 minutes do get_camera_data() (last run: [never], next run: 2018-11-23 22:36:48), Every 0.4 minutes do data_acquisition_job() (last run: [never], next run: 2018-11-23 21:37:12), Every 0.5 hours do send_data_to_aws() (last run: [never], next run: 2018-11-23 22:06:48), Every 0.5 hours do send_camera_data() (last run: [never], next run: 2018-11-23 22:06:48)]
-2018-11-23 21:36:48,872:DEBUG:__main__:Config file scheduler started
-2018-11-23 21:37:12,915:DEBUG:__main__:Sensor Data read
-2018-11-23 21:37:36,960:DEBUG:__main__:Sensor Data read
-2018-11-23 21:38:01,004:DEBUG:__main__:Sensor Data read
-2018-11-23 21:38:25,048:DEBUG:__main__:Sensor Data read
-2018-11-23 21:38:49,092:DEBUG:__main__:Sensor Data read
-2018-11-23 21:39:13,137:DEBUG:__main__:Sensor Data read
-2018-11-23 21:39:37,180:DEBUG:__main__:Sensor Data read
-2018-11-23 21:40:01,224:DEBUG:__main__:Sensor Data read
-2018-11-23 21:40:25,267:DEBUG:__main__:Sensor Data read
-2018-11-23 21:40:49,312:DEBUG:__main__:Sensor Data read
-2018-11-23 21:41:13,356:DEBUG:__main__:Sensor Data read
-2018-11-23 21:41:37,401:DEBUG:__main__:Sensor Data read
-2018-11-23 21:42:01,445:DEBUG:__main__:Sensor Data read
-2018-11-23 21:42:25,490:DEBUG:__main__:Sensor Data read
-2018-11-23 21:42:49,534:DEBUG:__main__:Sensor Data read
-2018-11-23 21:43:13,578:DEBUG:__main__:Sensor Data read
-2018-11-23 21:43:37,623:DEBUG:__main__:Sensor Data read
-2018-11-23 21:44:01,668:DEBUG:__main__:Sensor Data read
-2018-11-23 21:44:25,712:DEBUG:__main__:Sensor Data read
-2018-11-23 21:44:49,757:DEBUG:__main__:Sensor Data read
-2018-11-23 21:45:13,801:DEBUG:__main__:Sensor Data read
-2018-11-23 21:45:37,845:DEBUG:__main__:Sensor Data read
-2018-11-23 21:46:01,890:DEBUG:__main__:Sensor Data read
-2018-11-23 21:46:25,933:DEBUG:__main__:Sensor Data read
-2018-11-23 21:46:49,978:DEBUG:__main__:Sensor Data read
-2018-11-23 21:47:14,022:DEBUG:__main__:Sensor Data read
-2018-11-23 21:47:38,066:DEBUG:__main__:Sensor Data read
-2018-11-23 21:48:02,110:DEBUG:__main__:Sensor Data read
-2018-11-23 21:48:26,154:DEBUG:__main__:Sensor Data read
-2018-11-23 21:48:50,199:DEBUG:__main__:Sensor Data read
-2018-11-23 21:49:14,245:DEBUG:__main__:Sensor Data read
-2018-11-23 21:49:38,290:DEBUG:__main__:Sensor Data read
-2018-11-23 21:50:02,336:DEBUG:__main__:Sensor Data read
-2018-11-23 21:50:26,382:DEBUG:__main__:Sensor Data read
+2018-11-24 02:48:45,695:DEBUG:__main__:user activated task grow-start
+2018-11-24 02:48:45,705:DEBUG:__main__:Grow Started by the user
+2018-11-24 02:48:45,718:DEBUG:__main__:Config File Found
+2018-11-24 02:48:45,728:DEBUG:__main__:Config File Read
+2018-11-24 02:48:45,729:DEBUG:__main__:Grow Initiated
+2018-11-24 02:48:45,738:INFO:__main__:Fetching the schedule data for week0
+2018-11-24 02:48:45,742:DEBUG:__main__:Read config file
+2018-11-24 02:48:45,743:DEBUG:__main__:Global states declared
+2018-11-24 02:48:45,744:DEBUG:__main__:Config file scheduler created
+2018-11-24 02:48:45,744:DEBUG:__main__:LED task created
+2018-11-24 02:48:45,745:DEBUG:__main__:Fan scheduler created
+2018-11-24 02:48:45,745:DEBUG:__main__:Mixing pump task created
+2018-11-24 02:48:45,746:DEBUG:__main__:data acquisition and image capture created
+2018-11-24 02:48:45,747:DEBUG:__main__:Data sending to AWS scheduled
+2018-11-24 02:48:45,748:DEBUG:__main__:Image sending to S3 scheduled
+2018-11-24 02:48:45,748:DEBUG:__main__:[Every 0.5 days do light_on() (last run: [never], next run: 2018-11-24 14:48:45), Every 0.3 hours do fan_on() (last run: [never], next run: 2018-11-24 03:06:45), Every 6 hours do pump_mixing_on() (last run: [never], next run: 2018-11-24 08:48:45), Every 60 minutes do get_camera_data() (last run: [never], next run: 2018-11-24 03:48:45), Every 0.4 minutes do data_acquisition_job() (last run: [never], next run: 2018-11-24 02:49:09), Every 0.5 minutes do send_data_to_aws() (last run: [never], next run: 2018-11-24 02:49:15), Every 2.0 hours do send_camera_data() (last run: [never], next run: 2018-11-24 04:48:45)]
+2018-11-24 02:48:45,750:DEBUG:__main__:Config file scheduler started
+2018-11-24 02:49:09,838:DEBUG:__main__:Sensor Data read
+2018-11-24 02:49:15,859:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:49:33,924:DEBUG:__main__:Sensor Data read
+2018-11-24 02:49:45,968:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:49:58,015:DEBUG:__main__:Sensor Data read
+2018-11-24 02:50:16,078:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:50:22,105:DEBUG:__main__:Sensor Data read
+2018-11-24 02:50:46,205:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:50:46,212:DEBUG:__main__:Sensor Data read
+2018-11-24 02:51:10,302:DEBUG:__main__:Sensor Data read
+2018-11-24 02:51:16,324:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 02:51:34,391:DEBUG:__main__:Sensor Data read
+2018-11-24 02:51:46,434:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:51:58,481:DEBUG:__main__:Sensor Data read
+2018-11-24 02:52:16,546:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:52:22,572:DEBUG:__main__:Sensor Data read
+2018-11-24 02:52:46,656:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:52:46,664:DEBUG:__main__:Sensor Data read
+2018-11-24 02:53:10,752:DEBUG:__main__:Sensor Data read
+2018-11-24 02:53:16,775:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 02:53:34,841:DEBUG:__main__:Sensor Data read
+2018-11-24 02:53:46,882:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:53:58,930:DEBUG:__main__:Sensor Data read
+2018-11-24 02:54:16,997:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:54:23,023:DEBUG:__main__:Sensor Data read
+2018-11-24 02:54:47,108:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:54:47,114:DEBUG:__main__:Sensor Data read
+2018-11-24 02:55:11,205:DEBUG:__main__:Sensor Data read
+2018-11-24 02:55:17,227:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 02:55:35,296:DEBUG:__main__:Sensor Data read
+2018-11-24 02:55:47,339:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:55:59,387:DEBUG:__main__:Sensor Data read
+2018-11-24 02:56:17,452:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:56:23,493:DEBUG:__main__:Sensor Data read
+2018-11-24 02:56:47,576:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:56:47,581:DEBUG:__main__:Sensor Data read
+2018-11-24 02:57:11,671:DEBUG:__main__:Sensor Data read
+2018-11-24 02:57:17,692:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 02:57:35,761:DEBUG:__main__:Sensor Data read
+2018-11-24 02:57:47,803:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:57:59,860:DEBUG:__main__:Sensor Data read
+2018-11-24 02:58:17,928:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:58:23,958:DEBUG:__main__:Sensor Data read
+2018-11-24 02:58:48,063:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 02:58:48,069:DEBUG:__main__:Sensor Data read
+2018-11-24 02:59:12,163:DEBUG:__main__:Sensor Data read
+2018-11-24 02:59:18,186:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 02:59:36,259:DEBUG:__main__:Sensor Data read
+2018-11-24 02:59:48,337:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:00:00,386:DEBUG:__main__:Sensor Data read
+2018-11-24 03:00:18,448:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:00:24,473:DEBUG:__main__:Sensor Data read
+2018-11-24 03:00:48,559:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:00:48,566:DEBUG:__main__:Sensor Data read
+2018-11-24 03:01:12,657:DEBUG:__main__:Sensor Data read
+2018-11-24 03:01:18,678:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 03:01:36,745:DEBUG:__main__:Sensor Data read
+2018-11-24 03:01:48,789:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:02:00,835:DEBUG:__main__:Sensor Data read
+2018-11-24 03:02:18,898:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:02:24,924:DEBUG:__main__:Sensor Data read
+2018-11-24 03:02:49,007:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:02:49,013:DEBUG:__main__:Sensor Data read
+2018-11-24 03:03:13,100:DEBUG:__main__:Sensor Data read
+2018-11-24 03:03:19,122:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 03:03:37,192:DEBUG:__main__:Sensor Data read
+2018-11-24 03:03:49,234:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:04:01,280:DEBUG:__main__:Sensor Data read
+2018-11-24 03:04:19,347:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:04:25,374:DEBUG:__main__:Sensor Data read
+2018-11-24 03:04:49,469:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:04:49,475:DEBUG:__main__:Sensor Data read
+2018-11-24 03:05:13,580:DEBUG:__main__:Sensor Data read
+2018-11-24 03:05:19,602:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 03:05:37,668:DEBUG:__main__:Sensor Data read
+2018-11-24 03:05:49,712:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:06:01,759:DEBUG:__main__:Sensor Data read
+2018-11-24 03:06:19,822:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:06:25,849:DEBUG:__main__:Sensor Data read
+2018-11-24 03:06:45,919:DEBUG:__main__:Raspi -> Arduino: Fan On
+2018-11-24 03:06:45,919:DEBUG:__main__:Fan switched ON
+2018-11-24 03:06:49,936:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:06:49,941:DEBUG:__main__:Sensor Data read
+2018-11-24 03:07:14,040:DEBUG:__main__:Sensor Data read
+2018-11-24 03:07:20,063:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 03:07:38,133:DEBUG:__main__:Sensor Data read
+2018-11-24 03:07:50,186:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:08:02,237:DEBUG:__main__:Sensor Data read
+2018-11-24 03:08:20,309:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:08:26,338:DEBUG:__main__:Sensor Data read
+2018-11-24 03:08:50,429:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:08:50,435:DEBUG:__main__:Sensor Data read
+2018-11-24 03:09:14,537:DEBUG:__main__:Sensor Data read
+2018-11-24 03:09:20,559:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 03:09:38,628:DEBUG:__main__:Sensor Data read
+2018-11-24 03:09:50,672:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:10:02,720:DEBUG:__main__:Sensor Data read
+2018-11-24 03:10:20,784:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:10:26,812:DEBUG:__main__:Sensor Data read
+2018-11-24 03:10:50,901:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:10:50,907:DEBUG:__main__:Sensor Data read
+2018-11-24 03:11:15,005:DEBUG:__main__:Sensor Data read
+2018-11-24 03:11:21,029:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 03:11:39,101:DEBUG:__main__:Sensor Data read
+2018-11-24 03:11:51,147:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:12:03,195:DEBUG:__main__:Sensor Data read
+2018-11-24 03:12:21,263:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:12:27,290:DEBUG:__main__:Sensor Data read
+2018-11-24 03:12:51,379:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:12:51,387:DEBUG:__main__:Sensor Data read
+2018-11-24 03:13:15,487:DEBUG:__main__:Sensor Data read
+2018-11-24 03:13:21,511:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 03:13:39,582:DEBUG:__main__:Sensor Data read
+2018-11-24 03:13:51,627:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:14:03,676:DEBUG:__main__:Sensor Data read
+2018-11-24 03:14:21,744:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:14:27,790:DEBUG:__main__:Sensor Data read
+2018-11-24 03:14:51,878:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:14:51,899:DEBUG:__main__:Sensor Data read
+2018-11-24 03:15:16,009:DEBUG:__main__:Sensor Data read
+2018-11-24 03:15:22,036:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 03:15:40,138:DEBUG:__main__:Sensor Data read
+2018-11-24 03:15:52,186:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:16:04,235:DEBUG:__main__:Sensor Data read
+2018-11-24 03:16:22,305:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:16:28,339:DEBUG:__main__:Sensor Data read
+2018-11-24 03:16:52,429:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 03:16:52,436:DEBUG:__main__:Sensor Data read
+2018-11-24 03:17:16,533:DEBUG:__main__:Sensor Data read
+2018-11-24 03:17:22,558:DEBUG:__main__:Sending 2 data packets to AWS
