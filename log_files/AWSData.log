@@ -234,3 +234,53 @@
 2018-11-24 14:27:25,965:DEBUG:aws.aws_interface:packet sent to aws sucessfull
 2018-11-24 14:27:25,966:DEBUG:aws.aws_interface:Trying to send data to aws..
 2018-11-24 14:27:26,074:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:47:03,135:DEBUG:aws.aws_interface:Trying to connect to aws..
+2018-11-24 14:47:03,606:DEBUG:aws.aws_interface:connected to aws..
+2018-11-24 14:47:03,636:DEBUG:aws.aws_interface:subscribed to topic -- dev_ae1a34597bc14b0ea2c82700f91de6f4/task, activated callback function <bound method Main.task_activation of <__main__.Main object at 0x769d1f50>>
+2018-11-24 14:47:41,059:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 14:47:41,161:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:48:17,209:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 14:48:17,310:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:48:47,442:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 14:48:47,545:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:50:11,357:DEBUG:aws.aws_interface:Trying to connect to aws..
+2018-11-24 14:50:11,800:DEBUG:aws.aws_interface:connected to aws..
+2018-11-24 14:50:11,836:DEBUG:aws.aws_interface:subscribed to topic -- dev_ae1a34597bc14b0ea2c82700f91de6f4/task, activated callback function <bound method Main.task_activation of <__main__.Main object at 0x76a09f50>>
+2018-11-24 14:51:11,812:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 14:51:11,908:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:51:47,957:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 14:51:48,054:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:52:18,168:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 14:52:18,268:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:56:11,664:DEBUG:aws.aws_interface:Trying to connect to aws..
+2018-11-24 14:56:12,141:DEBUG:aws.aws_interface:connected to aws..
+2018-11-24 14:56:12,166:DEBUG:aws.aws_interface:subscribed to topic -- dev_ae1a34597bc14b0ea2c82700f91de6f4/task, activated callback function <bound method Main.task_activation of <__main__.Main object at 0x769c6f50>>
+2018-11-24 14:56:50,207:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 14:56:50,319:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:57:26,363:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 14:57:26,482:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:57:56,597:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 14:57:56,713:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 14:58:23,479:DEBUG:aws.aws_interface:Response: 200
+2018-11-24 15:06:03,614:DEBUG:aws.aws_interface:Trying to connect to aws..
+2018-11-24 15:06:04,087:DEBUG:aws.aws_interface:connected to aws..
+2018-11-24 15:06:04,108:DEBUG:aws.aws_interface:subscribed to topic -- dev_ae1a34597bc14b0ea2c82700f91de6f4/task, activated callback function <bound method Main.task_activation of <__main__.Main object at 0x76a2ff50>>
+2018-11-24 15:06:42,595:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 15:06:42,698:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 15:07:18,740:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 15:07:18,844:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 15:07:48,961:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 15:07:49,068:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 15:08:16,041:DEBUG:aws.aws_interface:Response: 200
+2018-11-24 15:08:26,001:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 15:08:26,106:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 15:08:26,108:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 15:08:26,206:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 15:08:56,336:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 15:08:56,443:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 15:09:32,531:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 15:09:32,644:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 15:10:02,777:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 15:10:02,880:DEBUG:aws.aws_interface:packet sent to aws sucessfull
+2018-11-24 15:10:02,882:DEBUG:aws.aws_interface:Trying to send data to aws..
+2018-11-24 15:10:02,979:DEBUG:aws.aws_interface:packet sent to aws sucessfull

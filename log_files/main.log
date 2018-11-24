@@ -1,79 +1,50 @@
-2018-11-24 14:22:13,571:DEBUG:__main__:user activated task grow-start
-2018-11-24 14:22:13,579:DEBUG:__main__:Grow Started by the user
-2018-11-24 14:22:13,587:DEBUG:__main__:Config File Found
-2018-11-24 14:22:13,597:DEBUG:__main__:Config File Read
-2018-11-24 14:22:13,598:DEBUG:__main__:Grow Initiated
-2018-11-24 14:22:13,607:INFO:__main__:Fetching the schedule data for week0
-2018-11-24 14:22:13,609:DEBUG:__main__:Read config file
-2018-11-24 14:22:13,610:DEBUG:__main__:Global states declared
-2018-11-24 14:22:13,610:DEBUG:__main__:Config file scheduler created
-2018-11-24 14:22:13,611:DEBUG:__main__:LED task created
-2018-11-24 14:22:13,611:DEBUG:__main__:Fan scheduler created
-2018-11-24 14:22:13,611:DEBUG:__main__:Mixing pump task created
-2018-11-24 14:22:13,612:DEBUG:__main__:data acquisition and image capture created
-2018-11-24 14:22:13,612:DEBUG:__main__:Data sending to AWS scheduled
-2018-11-24 14:22:13,613:DEBUG:__main__:Image sending to S3 scheduled
-2018-11-24 14:22:13,613:DEBUG:__main__:[Every 0.5 days do light_on() (last run: [never], next run: 2018-11-25 02:22:13), Every 2.0 minutes do fan_on() (last run: [never], next run: 2018-11-24 14:24:13), Every 6 hours do pump_mixing_on() (last run: [never], next run: 2018-11-24 20:22:13), Every 1.0 minute do get_camera_data() (last run: [never], next run: 2018-11-24 14:23:13), Every 0.4 minutes do data_acquisition_job() (last run: [never], next run: 2018-11-24 14:22:37), Every 0.5 minutes do send_data_to_aws() (last run: [never], next run: 2018-11-24 14:22:43), Every 2.0 hours do send_camera_data() (last run: [never], next run: 2018-11-24 16:22:13)]
-2018-11-24 14:22:13,614:DEBUG:__main__:Config file scheduler started
-2018-11-24 14:22:37,705:DEBUG:__main__:Sensor Data read
-2018-11-24 14:22:37,706:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:22:43,728:DEBUG:__main__:Sending 1 data packets to AWS
-2018-11-24 14:23:01,906:DEBUG:__main__:Sensor Data read
-2018-11-24 14:23:01,908:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:23:19,876:DEBUG:__main__:Camera Still Captured
-2018-11-24 14:23:19,878:DEBUG:__main__:Sending 1 data packets to AWS
-2018-11-24 14:23:26,016:DEBUG:__main__:Sensor Data read
-2018-11-24 14:23:26,017:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:23:50,103:DEBUG:__main__:Sending 1 data packets to AWS
-2018-11-24 14:23:50,235:DEBUG:__main__:Sensor Data read
-2018-11-24 14:23:50,237:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:24:14,323:DEBUG:__main__:Raspi -> Arduino: Fan On
-2018-11-24 14:24:14,324:DEBUG:__main__:Fan switched ON
-2018-11-24 14:24:14,329:DEBUG:__main__:Sensor Data read
-2018-11-24 14:24:14,331:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:24:26,255:DEBUG:__main__:Camera Still Captured
-2018-11-24 14:24:26,257:DEBUG:__main__:Sending 2 data packets to AWS
-2018-11-24 14:24:38,524:DEBUG:__main__:Sensor Data read
-2018-11-24 14:24:38,524:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:24:56,579:DEBUG:__main__:Sending 1 data packets to AWS
-2018-11-24 14:25:00,707:DEBUG:__main__:Raspi -> Arduino: Fan Off
-2018-11-24 14:25:00,869:DEBUG:__main__:Fan switched Off
-2018-11-24 14:25:02,878:DEBUG:__main__:Sensor Data read
-2018-11-24 14:25:02,878:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:25:32,855:DEBUG:__main__:Camera Still Captured
-2018-11-24 14:25:32,857:DEBUG:__main__:Sending 1 data packets to AWS
-2018-11-24 14:25:32,994:DEBUG:__main__:Sensor Data read
-2018-11-24 14:25:32,996:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:25:57,087:DEBUG:__main__:Sensor Data read
-2018-11-24 14:25:57,089:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:26:03,111:DEBUG:__main__:Sending 2 data packets to AWS
-2018-11-24 14:26:14,381:DEBUG:__main__:Raspi -> Arduino: Fan On
-2018-11-24 14:26:14,382:DEBUG:__main__:Fan switched ON
-2018-11-24 14:26:21,413:DEBUG:__main__:Sensor Data read
-2018-11-24 14:26:21,414:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:26:39,402:DEBUG:__main__:Camera Still Captured
-2018-11-24 14:26:39,404:DEBUG:__main__:Sending 1 data packets to AWS
-2018-11-24 14:26:45,550:DEBUG:__main__:Sensor Data read
-2018-11-24 14:26:45,551:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
-2018-11-24 14:26:55,146:DEBUG:__main__:user activated task ph-dosing-start
-2018-11-24 14:26:55,147:DEBUG:__main__:Ph dosing initiated by the user
-2018-11-24 14:26:55,606:INFO:__main__:Fetching the schedule data for ph_dosing
-2018-11-24 14:26:55,611:DEBUG:__main__:Read config file
-2018-11-24 14:26:55,612:DEBUG:__main__:Global states declared
-2018-11-24 14:26:55,612:DEBUG:__main__:Ph Dosing scheduler created
-2018-11-24 14:26:55,613:DEBUG:__main__:LED task created
-2018-11-24 14:26:55,614:DEBUG:__main__:Fan scheduler created
-2018-11-24 14:26:55,615:DEBUG:__main__:Mixing pump task created
-2018-11-24 14:26:55,616:DEBUG:__main__:data acquisition and image capture created
-2018-11-24 14:26:55,616:DEBUG:__main__:Data sending to AWS scheduled
-2018-11-24 14:26:55,617:DEBUG:__main__:Image sending to S3 scheduled
-2018-11-24 14:26:55,618:DEBUG:__main__:Ph dosing routine scheduled
-2018-11-24 14:26:55,619:DEBUG:__main__:[Every 0.01 days do light_on() (last run: [never], next run: 2018-11-24 14:41:19), Every 1.0 minute do fan_on() (last run: [never], next run: 2018-11-24 14:27:55), Every 6 hours do pump_mixing_on() (last run: [never], next run: 2018-11-24 20:26:55), Every 3.0 minutes do get_camera_data() (last run: [never], next run: 2018-11-24 14:29:55), Every 3.0 minutes do data_acquisition_job() (last run: [never], next run: 2018-11-24 14:29:55), Every 0.5 minutes do send_data_to_aws() (last run: [never], next run: 2018-11-24 14:27:25), Every 0.5 hours do send_camera_data() (last run: [never], next run: 2018-11-24 14:56:55), Every 10.0 seconds do ph_routine() (last run: [never], next run: 2018-11-24 14:27:05)]
-2018-11-24 14:26:55,621:DEBUG:__main__:Ph Dosing scheduler started
-2018-11-24 14:27:05,663:DEBUG:__main__:Sensor Data read
-2018-11-24 14:27:05,664:DEBUG:__main__:Ph state -> LOW
-2018-11-24 14:27:15,704:DEBUG:__main__:Sensor Data read
-2018-11-24 14:27:15,705:DEBUG:__main__:Ph state -> LOW
-2018-11-24 14:27:25,742:DEBUG:__main__:Sending 3 data packets to AWS
-2018-11-24 14:27:26,077:DEBUG:__main__:Sensor Data read
-2018-11-24 14:27:26,077:DEBUG:__main__:Ph state -> LOW
+2018-11-24 15:06:12,437:DEBUG:__main__:user activated task grow-start
+2018-11-24 15:06:12,444:DEBUG:__main__:Grow Started by the user
+2018-11-24 15:06:12,458:DEBUG:__main__:Config File Found
+2018-11-24 15:06:12,468:DEBUG:__main__:Config File Read
+2018-11-24 15:06:12,469:DEBUG:__main__:Grow Initiated
+2018-11-24 15:06:12,478:INFO:__main__:Fetching the schedule data for week0
+2018-11-24 15:06:12,480:DEBUG:__main__:Read config file
+2018-11-24 15:06:12,480:DEBUG:__main__:Global states declared
+2018-11-24 15:06:12,481:DEBUG:__main__:Config file scheduler created
+2018-11-24 15:06:12,481:DEBUG:__main__:LED task created
+2018-11-24 15:06:12,482:DEBUG:__main__:Fan scheduler created
+2018-11-24 15:06:12,482:DEBUG:__main__:Mixing pump task created
+2018-11-24 15:06:12,482:DEBUG:__main__:data acquisition and image capture created
+2018-11-24 15:06:12,483:DEBUG:__main__:Data sending to AWS scheduled
+2018-11-24 15:06:12,483:DEBUG:__main__:Image sending to S3 scheduled
+2018-11-24 15:06:12,484:DEBUG:__main__:[Every 0.5 days do light_on() (last run: [never], next run: 2018-11-25 03:06:12), Every 2.0 minutes do fan_on() (last run: [never], next run: 2018-11-24 15:08:12), Every 6 hours do pump_mixing_on() (last run: [never], next run: 2018-11-24 21:06:12), Every 1.0 minute do get_camera_data() (last run: [never], next run: 2018-11-24 15:07:12), Every 0.4 minutes do data_acquisition_job() (last run: [never], next run: 2018-11-24 15:06:36), Every 0.5 minutes do send_data_to_aws() (last run: [never], next run: 2018-11-24 15:06:42), Every 2.0 minutes do send_camera_data() (last run: [never], next run: 2018-11-24 15:08:12)]
+2018-11-24 15:06:12,485:DEBUG:__main__:Config file scheduler started
+2018-11-24 15:06:36,570:DEBUG:__main__:Sensor Data read
+2018-11-24 15:06:36,571:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
+2018-11-24 15:06:42,593:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 15:07:00,766:DEBUG:__main__:Sensor Data read
+2018-11-24 15:07:00,768:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
+2018-11-24 15:07:18,737:DEBUG:__main__:Camera Still Captured
+2018-11-24 15:07:18,739:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 15:07:24,872:DEBUG:__main__:Sensor Data read
+2018-11-24 15:07:24,873:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
+2018-11-24 15:07:48,959:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 15:07:49,074:DEBUG:__main__:Sensor Data read
+2018-11-24 15:07:49,076:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
+2018-11-24 15:08:13,165:DEBUG:__main__:Raspi -> Arduino: Fan On
+2018-11-24 15:08:13,166:DEBUG:__main__:Fan switched ON
+2018-11-24 15:08:13,169:DEBUG:__main__:Sending 1 image packets to AWS
+2018-11-24 15:08:16,053:DEBUG:__main__:Sensor Data read
+2018-11-24 15:08:16,054:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
+2018-11-24 15:08:24,993:DEBUG:__main__:Camera Still Captured
+2018-11-24 15:08:25,999:DEBUG:__main__:Sending 2 data packets to AWS
+2018-11-24 15:08:40,267:DEBUG:__main__:Sensor Data read
+2018-11-24 15:08:40,270:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
+2018-11-24 15:08:56,334:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 15:09:00,460:DEBUG:__main__:Raspi -> Arduino: Fan Off
+2018-11-24 15:09:00,461:DEBUG:__main__:Fan switched Off
+2018-11-24 15:09:04,481:DEBUG:__main__:Sensor Data read
+2018-11-24 15:09:04,482:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
+2018-11-24 15:09:31,524:DEBUG:__main__:Camera Still Captured
+2018-11-24 15:09:32,530:DEBUG:__main__:Sending 1 data packets to AWS
+2018-11-24 15:09:32,650:DEBUG:__main__:Sensor Data read
+2018-11-24 15:09:32,653:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
+2018-11-24 15:09:56,747:DEBUG:__main__:Sensor Data read
+2018-11-24 15:09:56,751:DEBUG:__main__:['LOW', 'LOW', 'LOW', 'LOW', 'LOW']
+2018-11-24 15:10:02,775:DEBUG:__main__:Sending 2 data packets to AWS

@@ -102,11 +102,13 @@ class AWSInterface():
         
         url = "https://r65hlx6e9a.execute-api.us-west-2.amazonaws.com/beta/upload-image"
         r = requests.post(url,data=json.dumps(payload))
+        print(r)
+        print(type(r))
         response = r.json()
-        if response['statusCode'] == 200:
+        if r.status_code == 200:
 
-            self.logger.debug(response['status'])
-            self.logger.debug('uploaded image name %s',response['image_name'])
+            self.logger.debug('Response: {}'.format(r.status_code))
+            #self.logger.debug('uploaded image name %s',response['image_name'])
         else:
             self.logger.error('Image upload failed')
             self.logger.error(response)

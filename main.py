@@ -132,7 +132,7 @@ class Main:
         self.logger.debug('Data sending to AWS scheduled')
 
         # schedule sending images to aws S3
-        schedule.every(self.grow_cycle.sendImagesToAWSInterval).hours.\
+        schedule.every(self.grow_cycle.sendImagesToAWSInterval).minutes.\
             do(self.send_camera_data)
         self.logger.debug('Image sending to S3 scheduled')
 
