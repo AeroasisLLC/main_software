@@ -51,7 +51,7 @@ class Main:
                 self.grow_cycle.get_growcycle_info()
                 estimated_harvest = self.grow_cycle.estimatedHarvest
                 current_week = self.get_current_week()
-
+                self.AWS.growStartDate = self.grow_cycle.growStartDate
                 self.logger.debug('Grow Initiated')
 
                 while datetime.datetime.now() <= estimated_harvest:
@@ -243,20 +243,25 @@ class Main:
 
     def get_camera_data(self):
         # get image data
-        self.camera_capture.capture_image()
-        #self.Image_Queue.put(image)
+        image_name = self.camera_capture.capture_image()
+        self.Image_Queue.put(image_name)
         return
 
     def send_camera_data(self):
-        # while not self.Image_Queue.empty():
-        #     self.AWS.sendData(self.Image_Queue.get())
+        self.logger.debug('Sending {} image packets to AWS'.format(self.Image_Queue.qsize()))
+        empty = False
+        while not empty:
+            self.AWS.sendCameraData(self.Image_Queue.get())
+            empty = self.Image_Queue.empty()
+        
         return
 
     def send_data_to_aws(self):
         self.logger.debug('Sending {} data packets to AWS'.format(self.Data_Queue.qsize()))
         empty = False
         while not empty:
-            self.write_to_file(str(self.Data_Queue.get())+"\n")
+            #self.write_to_file(str(self.Data_Queue.get())+"\n")
+            self.AWS.sendData(self.Data_Queue.get())
             empty = self.Data_Queue.empty()
             
         return

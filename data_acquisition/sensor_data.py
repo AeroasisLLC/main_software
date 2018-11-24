@@ -84,7 +84,7 @@ class SensorData:
             filtered_data[data[4]] = data_split[4]
             filtered_data[data[5]] = data_split[5]
             filtered_data[data[6]] = ""
-            filtered_data[data[7]] = datetime.datetime.now()
+            filtered_data[data[7]] = str(datetime.datetime.now())
 
         return filtered_data
 

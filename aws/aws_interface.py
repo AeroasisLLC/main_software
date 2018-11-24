@@ -25,7 +25,7 @@ class AWSInterface():
         self.growId = parser.get('grow', 'growId')
         parser.read('config_files/plant.conf')
         self.growStartDate = None
-        self.growStartDate = None
+        
         self.myAWSIoTMQTTClient = AWSIoTMQTTClient(self.clientId)
         self.myAWSIoTMQTTClient.configureEndpoint(self.host, self.port)
         self.myAWSIoTMQTTClient.configureCredentials(
@@ -70,28 +70,28 @@ class AWSInterface():
             self.logger.warning('packet send to aws failed..')
             self.logger.warning(e)
             self.logger.debug('packet sending into queue here after')
-            print(e)
-            print("packet sending failed...")
-            print("packet sending into queue here after....")
+            self.logger.error(e)
+            self.logger.error("packet sending failed...")
+            self.logger.error("packet sending into queue here after....")
 
         else:
             self.logger.debug('packet sent to aws sucessfull')
-            print("packet sent successfully...")
+            #self.logger.debug("packet sent successfully...")
 
     def makePacket(self, data):
         packet = {}
         packet['device_id'] = self.clientId
         packet['user_id'] = self.userId
         packet['time_stamp'] = str(datetime.datetime.now())
-        packet['sensor_data'] = data['sensor']
+        packet['sensor_data'] = data
         packet['grow_id'] = self.growId
-        packet['time_from_start'] = str(datetime.date.today()-self.growStartDate)
-        packet['actuator_data'] = data['actuator']
+        packet['time_from_start'] = str(datetime.datetime.now()-self.growStartDate)
+        #packet['actuator_data'] = data['actuator']
         iotPacket = json.dumps(packet)
         return iotPacket
 
-    def sendCameraData(self):
-        img = open('sample.jpg', 'rb').read()
+    def sendCameraData(self, file_name):
+        img = open(file_name, 'rb').read()
 
         payload = {
                     'user_id':self.userId,

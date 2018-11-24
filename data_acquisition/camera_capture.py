@@ -7,9 +7,9 @@ class CameraCapture:
 
     def capture_image(self):
         p = subprocess.Popen(['./data_acquisition/raspistill.sh'], stdout=subprocess.PIPE)
-        com = p.communicate()[0].decode()
+        com = p.communicate()[0].decode().strip('\n')
         self.logger.debug('Camera Still Captured')
-        return
+        return com
     
 
 if __name__ == '__main__':
