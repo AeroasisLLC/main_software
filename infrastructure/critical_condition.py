@@ -7,11 +7,11 @@ def check_critical_condition(sensor_data, states):
     :parameter: states  (States()) - states object to get critical limits
     :return: report (dict)
     """
-    temperature = sensor_data["temperature"]
-    humidity = sensor_data["humidity"]
-    waterlevel = sensor_data["waterlevel"]
-    ph = sensor_data["ph"]
-    ec = sensor_data["ec"]
+    temperature = int(sensor_data["temperature"])
+    humidity = int(sensor_data["humidity"])
+    waterlevel = float(sensor_data["waterlevel"])
+    ph = float(sensor_data["pH"])
+    ec = float(sensor_data["EC"])
 
     checklist = {'temperature': None,
                  'humidity': None,

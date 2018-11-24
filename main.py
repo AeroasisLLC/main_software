@@ -200,7 +200,8 @@ class Main:
 
         # evaluate the critical condition checklist
         # send the data to queue
-        if critical_check.values().count("OK") < 5:
+        checklist = [i for i in critical_check.values()]
+        if checklist.count("OK") < 5:
             track_critical_condition(critical_check)
             self.Data_Queue.put(data)
         else:

@@ -4,7 +4,7 @@ import datetime
 import RPi.GPIO as GPIO
 
 class SensorData:
-    def __init__(self):
+    def __init__(self, logger):
         """
         Initialize variables and operators
         1. initialize serial port
@@ -22,7 +22,7 @@ class SensorData:
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.interrupt_pin, GPIO.OUT, initial=1)
 
-        # self.logger = logger
+        self.logger = logger
 
     def get_data(self):
         """
@@ -56,7 +56,7 @@ class SensorData:
             else:
                 ack = False
 
-        # self.logger.debug('Sensor Data read')
+        self.logger.debug('Sensor Data read')
 
         return filter_sensor_data
 
@@ -105,4 +105,5 @@ class SensorData:
 
 if __name__ == '__main__':
     sensor = SensorData()
-    print(sensor.get_data())
+    while True:
+        print(sensor.get_data())

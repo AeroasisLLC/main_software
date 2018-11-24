@@ -1,17 +1,51 @@
-2018-11-23 19:33:06,447:DEBUG:__main__:user activated task grow-start
-2018-11-23 19:33:06,455:DEBUG:__main__:Grow Started by the user
-2018-11-23 19:33:06,473:DEBUG:__main__:Config File Found
-2018-11-23 19:33:06,483:DEBUG:__main__:Config File Read
-2018-11-23 19:33:06,484:DEBUG:__main__:Grow Initiated
-2018-11-23 19:33:06,492:INFO:__main__:Fetching the schedule data for week0
-2018-11-23 19:33:06,494:DEBUG:__main__:Read config file
-2018-11-23 19:33:06,495:DEBUG:__main__:Global states declared
-2018-11-23 19:33:06,495:DEBUG:__main__:Config file scheduler created
-2018-11-23 19:33:06,496:DEBUG:__main__:LED task created
-2018-11-23 19:33:06,496:DEBUG:__main__:Fan scheduler created
-2018-11-23 19:33:06,496:DEBUG:__main__:Mixing pump task created
-2018-11-23 19:33:06,497:DEBUG:__main__:data acquisition and image capture created
-2018-11-23 19:33:06,497:DEBUG:__main__:Data sending to AWS scheduled
-2018-11-23 19:33:06,498:DEBUG:__main__:Image sending to S3 scheduled
-2018-11-23 19:33:06,498:DEBUG:__main__:[Every 0.5 days do light_on() (last run: [never], next run: 2018-11-24 07:33:06), Every 0.3 hours do fan_on() (last run: [never], next run: 2018-11-23 19:51:06), Every 6 hours do pump_mixing_on() (last run: [never], next run: 2018-11-24 01:33:06), Every 60 minutes do get_camera_data() (last run: [never], next run: 2018-11-23 20:33:06), Every 0.4 minutes do data_acquisition_job() (last run: [never], next run: 2018-11-23 19:33:30), Every 0.5 hours do send_data_to_aws() (last run: [never], next run: 2018-11-23 20:03:06), Every 0.5 hours do send_camera_data() (last run: [never], next run: 2018-11-23 20:03:06)]
-2018-11-23 19:33:06,499:DEBUG:__main__:Config file scheduler started
+2018-11-23 21:36:48,820:DEBUG:__main__:user activated task grow-start
+2018-11-23 21:36:48,827:DEBUG:__main__:Grow Started by the user
+2018-11-23 21:36:48,846:DEBUG:__main__:Config File Found
+2018-11-23 21:36:48,855:DEBUG:__main__:Config File Read
+2018-11-23 21:36:48,856:DEBUG:__main__:Grow Initiated
+2018-11-23 21:36:48,865:INFO:__main__:Fetching the schedule data for week0
+2018-11-23 21:36:48,867:DEBUG:__main__:Read config file
+2018-11-23 21:36:48,867:DEBUG:__main__:Global states declared
+2018-11-23 21:36:48,868:DEBUG:__main__:Config file scheduler created
+2018-11-23 21:36:48,868:DEBUG:__main__:LED task created
+2018-11-23 21:36:48,869:DEBUG:__main__:Fan scheduler created
+2018-11-23 21:36:48,869:DEBUG:__main__:Mixing pump task created
+2018-11-23 21:36:48,870:DEBUG:__main__:data acquisition and image capture created
+2018-11-23 21:36:48,870:DEBUG:__main__:Data sending to AWS scheduled
+2018-11-23 21:36:48,870:DEBUG:__main__:Image sending to S3 scheduled
+2018-11-23 21:36:48,871:DEBUG:__main__:[Every 0.5 days do light_on() (last run: [never], next run: 2018-11-24 09:36:48), Every 0.3 hours do fan_on() (last run: [never], next run: 2018-11-23 21:54:48), Every 6 hours do pump_mixing_on() (last run: [never], next run: 2018-11-24 03:36:48), Every 60 minutes do get_camera_data() (last run: [never], next run: 2018-11-23 22:36:48), Every 0.4 minutes do data_acquisition_job() (last run: [never], next run: 2018-11-23 21:37:12), Every 0.5 hours do send_data_to_aws() (last run: [never], next run: 2018-11-23 22:06:48), Every 0.5 hours do send_camera_data() (last run: [never], next run: 2018-11-23 22:06:48)]
+2018-11-23 21:36:48,872:DEBUG:__main__:Config file scheduler started
+2018-11-23 21:37:12,915:DEBUG:__main__:Sensor Data read
+2018-11-23 21:37:36,960:DEBUG:__main__:Sensor Data read
+2018-11-23 21:38:01,004:DEBUG:__main__:Sensor Data read
+2018-11-23 21:38:25,048:DEBUG:__main__:Sensor Data read
+2018-11-23 21:38:49,092:DEBUG:__main__:Sensor Data read
+2018-11-23 21:39:13,137:DEBUG:__main__:Sensor Data read
+2018-11-23 21:39:37,180:DEBUG:__main__:Sensor Data read
+2018-11-23 21:40:01,224:DEBUG:__main__:Sensor Data read
+2018-11-23 21:40:25,267:DEBUG:__main__:Sensor Data read
+2018-11-23 21:40:49,312:DEBUG:__main__:Sensor Data read
+2018-11-23 21:41:13,356:DEBUG:__main__:Sensor Data read
+2018-11-23 21:41:37,401:DEBUG:__main__:Sensor Data read
+2018-11-23 21:42:01,445:DEBUG:__main__:Sensor Data read
+2018-11-23 21:42:25,490:DEBUG:__main__:Sensor Data read
+2018-11-23 21:42:49,534:DEBUG:__main__:Sensor Data read
+2018-11-23 21:43:13,578:DEBUG:__main__:Sensor Data read
+2018-11-23 21:43:37,623:DEBUG:__main__:Sensor Data read
+2018-11-23 21:44:01,668:DEBUG:__main__:Sensor Data read
+2018-11-23 21:44:25,712:DEBUG:__main__:Sensor Data read
+2018-11-23 21:44:49,757:DEBUG:__main__:Sensor Data read
+2018-11-23 21:45:13,801:DEBUG:__main__:Sensor Data read
+2018-11-23 21:45:37,845:DEBUG:__main__:Sensor Data read
+2018-11-23 21:46:01,890:DEBUG:__main__:Sensor Data read
+2018-11-23 21:46:25,933:DEBUG:__main__:Sensor Data read
+2018-11-23 21:46:49,978:DEBUG:__main__:Sensor Data read
+2018-11-23 21:47:14,022:DEBUG:__main__:Sensor Data read
+2018-11-23 21:47:38,066:DEBUG:__main__:Sensor Data read
+2018-11-23 21:48:02,110:DEBUG:__main__:Sensor Data read
+2018-11-23 21:48:26,154:DEBUG:__main__:Sensor Data read
+2018-11-23 21:48:50,199:DEBUG:__main__:Sensor Data read
+2018-11-23 21:49:14,245:DEBUG:__main__:Sensor Data read
+2018-11-23 21:49:38,290:DEBUG:__main__:Sensor Data read
+2018-11-23 21:50:02,336:DEBUG:__main__:Sensor Data read
+2018-11-23 21:50:26,382:DEBUG:__main__:Sensor Data read
