@@ -103,6 +103,7 @@ class SensorData:
             print("Incorrect Data Format")
         return json_data
 
+
 if __name__ == '__main__':
     sensor = SensorData()
     while True:
