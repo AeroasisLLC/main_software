@@ -39,8 +39,6 @@ class GrowCycle:
         self.sendImagesToAWSInterval = None
         self.phDosingInterval = None
         self.phDosingDuration = None
-        self.collectDataInterval = 30
-        self.collectImageInterval = 60
         self.Actuator = ActuatorControl(logger_received)
         self.states = states
 

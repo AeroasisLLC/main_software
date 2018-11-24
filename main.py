@@ -109,7 +109,7 @@ class Main:
 
         # fan scheduling
         if self.grow_cycle.fanOnDuration != 0:
-            schedule.every(self.grow_cycle.fanOnInterval).hours.\
+            schedule.every(self.grow_cycle.fanOnInterval).minutes.\
                 do(self.grow_cycle.fan_on)
         self.logger.debug('Fan scheduler created')
 
@@ -120,7 +120,7 @@ class Main:
         self.logger.debug('Mixing pump task created')
 
         # data acquisition and image capture scheduling
-        schedule.every(self.grow_cycle.collectImageInterval).minutes.\
+        schedule.every(self.grow_cycle.collectCameraInterval).minutes.\
             do(self.get_camera_data)
         schedule.every(self.grow_cycle.collectDataInterval).minutes.\
             do(self.data_acquisition_job)
@@ -140,12 +140,18 @@ class Main:
             schedule.every(self.grow_cycle.phDosingInterval).seconds.\
                  do(self.ph_routine)
             self.logger.debug('Ph dosing routine scheduled')
+        
+        if self.states.Current_Mode == "WATER CHANGE":
+            schedule.every(self.grow_cycle.collectDataInterval).seconds.\
+                 do(self.waterchange_routine)
+            self.logger.debug('PWater Change routine scheduled')
+            
         return
 
     def ph_routine(self):
         # get sensor data
         data = self.sensor_data.get_data()
-
+        self.Data_Queue.put(data)
         # send data for critical check
         critical_check = check_critical_condition(sensor_data=data, states=self.states)
 
@@ -157,7 +163,32 @@ class Main:
         elif critical_check['ph'] == 'DOWN':
             self.states.ph_dosing_flag = True
             self.grow_cycle.ph_down_motor_on()
+        
+        self.logger.debug("Ph state -> {}".format(critical_check['ph']))
+        
+        if not self.states.ph_dosing_flag:
+            return schedule.CancelJob
+        else:
+            return
+    
+    def waterchange_routine(self):
+        # get sensor data
+        data = self.sensor_data.get_data()
+        self.Data_Queue.put(data)
+        # send data for critical check
+        critical_check = check_critical_condition(sensor_data=data, states=self.states)
 
+        if critical_check['waterlevel'] == 'OK':
+            self.states.ph_dosing_flag = False
+        elif critical_check['waterlevel'] == 'UP':
+            self.states.ph_dosing_flag = True
+            self.grow_cycle.ph_up_motor_on()
+        elif critical_check['waterlevel'] == 'DOWN':
+            self.states.ph_dosing_flag = True
+            self.grow_cycle.ph_down_motor_on()
+        
+        self.logger.debug("Water Level state -> {}".format(critical_check['waterlevel']))
+        
         if not self.states.ph_dosing_flag:
             return schedule.CancelJob
         else:
@@ -201,6 +232,7 @@ class Main:
         # evaluate the critical condition checklist
         # send the data to queue
         checklist = [i for i in critical_check.values()]
+        self.logger.debug(str(checklist))
         if checklist.count("OK") < 5:
             track_critical_condition(critical_check)
             self.Data_Queue.put(data)
@@ -211,8 +243,8 @@ class Main:
 
     def get_camera_data(self):
         # get image data
-        image = self.camera_capture.capture_image(frame_no=self.states.frame_no)
-        self.Image_Queue.put(image)
+        self.camera_capture.capture_image()
+        #self.Image_Queue.put(image)
         return
 
     def send_camera_data(self):
@@ -224,13 +256,9 @@ class Main:
         self.logger.debug('Sending {} data packets to AWS'.format(self.Data_Queue.qsize()))
         empty = False
         while not empty:
-            #print(type(self.Data_Queue.get()))
-            #print(self.Data_Queue.empty())
-            # print(type(self.Data_Queue.get()))
             self.write_to_file(str(self.Data_Queue.get())+"\n")
-            # self.AWS.sendData(self.Data_Queue.get())
             empty = self.Data_Queue.empty()
-            print(empty)
+            
         return
 
     def get_current_week(self):
@@ -318,7 +346,7 @@ class Main:
         data = json.loads(message.payload.decode())
 
         task = data['task']
-
+        
         self.logger.debug('user activated task %s', task)
         if task == "grow-start":
             plant_type = data['plant_type']
@@ -333,10 +361,10 @@ class Main:
         elif task == "water-change-end":
             self.set_mode_water_change("end")
 
-        elif task == "ph-change-start":
+        elif task == "ph-dosing-start":
             self.set_mode_ph_change("start")
 
-        elif task == "ph-change-end":
+        elif task == "ph-dosing-end":
             self.set_mode_ph_change("end")
 
         else:
